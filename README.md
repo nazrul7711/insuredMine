@@ -14,4 +14,5 @@ Following is the approach i had while building this project:
 1. First we will create an account and this account will have empty arrays as values for policy and user, later on when we will create user and policy while updating these accounts we can add policy and user to these arrays. While pushing policy or user we will pass single policy or user and we will see if the user or policy if they exist then we will remove them from the array or we will push them.
 2. After creation of account we can make policy and user documents.
 3. All routes except account creation and user creation are protected . We assume only account holder can make CRUD operation on these documents.
+4. Here apart from the CRUD endpoints for the User, Account and Policy . I have made endpoints for the Agent , Lob, Carrier. In Agent I have made one api for the Agent creation and one for the Agent updation as while creating agent agent will not have any policies and later on for policy updation we need another api.
 
